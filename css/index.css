@@ -1,5 +1,23 @@
+/* Variables */
+:root {
+    --maroon: #7f0000;
+    --forestgreen: #00695c;
+    --white: #F0F0F0;
+    --lightgrey: #E7E7E7;
+}
+
 /* Portrait */
 .portrait {
     margin-top: 8.5vh;
     text-align: center;
 }
+
+/* Contact Buttons */
+i {
+    color: black;
+}
+
+.icons a .fa:hover {
+    color: var(--forestgreen);
+    transition: color .5s;
+  }
