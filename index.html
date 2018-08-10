@@ -1,35 +1,295 @@
-<!DOCTYPE html>
-<html lang="en">
-  <!--Head-->
-  <head>
-    <!--Resources-->
-    <link rel="stylesheet" href="lib/font awesome/css/fontawesome.min.css">
+﻿<!DOCTYPE html>
+<html>
+<!-- MARK: Head -->
+<head>
+    <!-- Resources -->
+    <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:600" rel="stylesheet">
+    <meta charset="utf-8" />
 
-    <title>Breanna Tan</title>
-  </head>
-  <body>
-
-    <!--Center All Elements-->
-    <div class="center-align">
-
-      <!--Portrait-->
-      <div class="portrait">
-          <img src="images/graffiti.jpg" class="circle responsive-img" style="height: 300px;" align="middle">
-      </div>
-    
-      <!--Name and Description-->
-      <h2 class="name">Breanna Tan</h2>
-      <p class="description">Software Engineer</p>
-      
-      <!--Contact Buttons-->
-      <div class="row">
-        <div class="icons col s12">
-          <a target="_blank" href="https://github.com/Tanotch"><i class="fa fa-github"></i></a>
-          <a target="_blank" href="https://www.linkedin.com/in/breanna-tan-b89b3067/"><i class="fa fa-linkedin"></i></a>
-          <a href="mailto:breannaltan@gmail.com"><i class="fa fa-envelope-o"></i></a>
+    <title>Breanna Tan Personal Site</title>
+</head>
+<body>
+    <!-- MARK: Navigation Bar -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#top">BLT</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden"><a class="page-scroll" href="#top"><span class="sr-only">(current)</span></a></li>
+                    <li data-toggle="collapse" data-target="#navbar-collapse.in"><a class="page-scroll" href="#about">About</a></li>
+                    <li data-toggle="collapse" data-target="#navbar-collapse.in"><a class="page-scroll" href="#skills">Skills</a></li>
+                    <li data-toggle="collapse" data-target="#navbar-collapse.in"><a class="page-scroll" href="#projects">Projects</a></li>
+                    <li data-toggle="collapse" data-target="#navbar-collapse.in"><a class="page-scroll" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
+
+
+    <!--MARK: Header-->
+    <div class="parallax">
+        <header>
+            <div class="header-content">
+                <div class="header-content-inner" id="intro">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h1>Breannna Tan</h1>
+                    <hr>
+                    <h4>Software Engineer, Twitch Streamer, Aspiring Gym Rat, Cat Mom</h4>
+                </div>
+            </div>
+        </header>
     </div>
-  </body>
+
+    <!-- MARK: About -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-center">About</h2>
+                    <hr>
+                    <br />
+                    <img src="img/montreal.jpg" alt="profile" class="img-responsive center-block img-circle" />
+                    <br />
+                    <div class="center-block">
+                        <p>Hi my name is Breanna. This site is to showcase my front-end development learning and fun facts about me.</p>
+                        <p>I graduated with a B.S. in Management Information Systems from Oakland University. My goal is continuous learning and improvement to be able to adapt and improve the future of technology.</p>
+                        <p>I enjoy solving problems and taking on new challenges through technology and math. I currently have working knowledge of Object-Oriented Design, Back-End Development and Unit testing. C# and web services are my forte. I've worked with .NET 4.6 & 4.7 frameworks and currently expanding my knowledge of .NET Core.</p>
+                        <p>If I'm not coding, I'm going to the gym, playing/streaming video games, or binge watching TV shows.</p>
+                        <p>If you need a developer, please feel free to contact me.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARK: Skills -->
+    <section class="bg-secondary" id="skills">
+        <div class="container-fluid">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Skills</h2>
+                <hr class="primary">
+                <br />
+                <div class="row" id="progicon">
+                    <div class="col-xs-12 col-sm-3 col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2">
+
+                        <img src="img/csharp.svg" alt="CSharp" />
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+
+                        <img src="img/html.svg" alt="HTML5" />
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+
+                        <img src="img/css.svg" alt="CSS3" />
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+
+                        <img src="img/js.svg" alt="JavaScript"/>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!--MARK: Portfolio-->
+    <section class="bg-third" id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-center">Projects</h2>
+                    <hr>
+                    <div class="container-fluid">
+                        <div class="proj-desc">
+                            <h3>FreeCodeCamp Front End Projects</h3>
+                            <p>
+                                Here are the projects I am working on through <a href="http://freecodecamp.org/Tanotch">Free Code Camp</a>. Enjoy!
+                                <br />
+                                <br />
+                            </p>
+                        </div>
+                        <div class="row no-gutter popup-gallery">
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <a href="https://codepen.io/Tanotch/full/qjeJOx/" class="portfolio-box" ontouchstart="this.classList.toggle('hover');">
+                                    <img src="img/billNye.png" class="img-responsive" alt="TributePage"/>
+                                    <div class="portfolio-box-caption">
+                                        <div class="portfolio-box-caption-content">
+                                            <div class="project-name">
+                                                Tribute Page - Bill Nye
+                                            </div>
+                                            <div class="project-category text-faded">
+                                                Basic Web Page with
+                                                <br />HTML and CSS Front End
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <a href="https://codepen.io/Tanotch/full/wqowEK/" class="portfolio-box" ontouchstart="this.classList.toggle('hover');">
+                                    <img src="img/got.png" class="img-responsive" alt="Random Quotes" />
+                                    <div class="portfolio-box-caption">
+                                        <div class="portfolio-box-caption-content">
+                                            <div class="project-name">
+                                                Random Quotes - Game of Thrones
+                                            </div>
+                                            <div class="project-category text-faded">
+                                                Website that cycles
+                                                <br />through Game of Thrones Quotes
+                                                <br />with JavaScript, HTML, CSS
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <a href="https://codepen.io/Tanotch/full/PKpmWB/" class="portfolio-box" ontouchstart="this.classList.toggle('hover');">
+                                    <img src="img/weather.png" class="img-responsive" alt="localWeather" />
+                                    <div class="portfolio-box-caption">
+                                        <div class="portfolio-box-caption-content">
+                                            <div class="project-name">
+                                                Local Weather App
+                                            </div>
+                                            <div class="project-category text-faded">
+                                                with jQuery, HTML, CSS
+                                                <br />Local Weather
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <a href="https://codepen.io/Tanotch/full/ayWMeK/" class="portfolio-box" ontouchstart="this.classList.toggle('hover');">
+                                    <img src="img/wiki.png" class="img-responsive" alt="WikiViewer" />
+                                    <div class="portfolio-box-caption">
+                                        <div class="portfolio-box-caption-content">
+                                            <div class="project-name">
+                                                Search Wikipedia
+                                            </div>
+                                            <div class="project-category text-faded">
+                                                with jQuery, HTML, CSS
+                                                <br />Wikipedia Viewer
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <a href="#" class="portfolio-box" ontouchstart="this.classList.toggle('hover');">
+                                    <img src="img/wip.png" class="img-responsive" alt="TwitchJSONAPI" />
+                                    <div class="portfolio-box-caption">
+                                        <div class="portfolio-box-caption-content">
+                                            <div class="project-name">
+                                                Programming in progress...
+                                            </div>
+                                            <div class="project-category text-faded">
+                                                Coming soon
+                                                <br />Twitch.TV JSON API
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <a href="#" class="portfolio-box" ontouchstart="this.classList.toggle('hover');">
+                                    <img src="img/wip.png" class="img-responsive" alt="JSCalculator" />
+                                    <div class="portfolio-box-caption">
+                                        <div class="portfolio-box-caption-content">
+                                            <div class="project-name">
+                                                Programming in progress...
+                                            </div>
+                                            <div class="project-category text-faded">
+                                                Coming soon
+                                                <br />JavaScript Calculator
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row no-gutter popup-gallery">
+                            <h3>Personal Projects</h3>
+                            <p>This site and </p>
+                            <div class="col-xs-12 col-sm-12 col-md-4">
+                                <a href="https://codepen.io/Tanotch/full/WKdzZX/" class="portfolio-box" ontouchstart="this.classList.toggle('hover');">
+                                    <img src="img/floorPlan.png" class="img-responsive" alt="floorPlan" />
+                                    <div class="portfolio-box-caption">
+                                        <div class="portfolio-box-caption-content">
+                                            <div class="project-name">
+                                                Interactive Office Floor Plan
+                                            </div>
+                                            <div class="project-category text-faded">
+                                                Draggable contents in HTML Tables
+                                                <br />HTML, CSS, Bootstrap, jQuery
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h3>Twitch Stream</h3>
+                            <p>During my free time, I stream video games on Twitch <a href="http://twitch.tv/breannaleetan">(My Channel)</a>. I'm current a Twitch Affiliate and consider myself a variety streamer. Games I play:</p>
+                            <ul>
+                                <li>League of Legends</li>
+                                <li>World of Warcraft</li>
+                                <li>Guild Wars 2</li>
+                                <li>Counter Strike: Global Objective</li>
+                                <li>Diablo III</li>
+                                <li>Hearthstone</li>
+                                <li>Heroes of the Storm</li>
+                                <li>Overwatch</li>
+                                <li>Pokemon</li>
+                                <li>Many more this could take forever...</li>
+                            </ul>
+                        </div>
+                    </div>
+    </section>
+
+    <!-- MARK: Contact -->
+    <section id="contact">
+        <div class="container text-center">
+            <h2 class="section-heading">Contact</h2>
+            <hr class="primary">
+            <div class="container">
+                <div class="row">
+                    <div class="icons col-xs-12 col-md-12 text-center">
+                        <h1>
+                            <a href="mailto:breannaltan@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/breanna-tan-b89b3067/"><i class="fa fa-linkedin"></i></a>
+                            <a target="_blank" href="https://github.com/Tanotch"><i class="fa fa-github"></i></a>
+                            <a target="_blank" href="https://twitch.tv/breannaleetan"><i class="fa fa-twitch"></i></a>
+                            <a target="_blank" href="https://twitter.com/breannaleetan"><i class="fa fa-twitter"></i></a>
+                        </h1>
+                        <p>Thank you for stopping by my page!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mark: Footer -->
+    <footer>
+        <h5>Designed & Developed by Breanna Tan</h5>
+    </footer>
+
+    <!--Scripts-->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <script src="js/site.js"></script>
+</body>
 </html>

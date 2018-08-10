@@ -1,23 +1,217 @@
-/* Variables */
-:root {
-    --maroon: #7f0000;
-    --forestgreen: #00695c;
-    --white: #F0F0F0;
-    --lightgrey: #E7E7E7;
+﻿body {
+    text-align: center;
+    background-color: #F0F0F0;
+    font-family: 'Zilla Slab', serif;
 }
 
-/* Portrait */
-.portrait {
-    margin-top: 8.5vh;
+/* Headings */
+h1, h2 {
+    color: #7f0000;
+    font-weight: bold;
+}
+
+hr {
+    border: 1px solid #90906f;
+    width: 70%;
+}
+
+/* Header */
+.container {
     text-align: center;
 }
 
-/* Contact Buttons */
+#intro > h4 {
+    color: black;
+}
+
+#intro > h1 {
+    font-size: 400%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../img/laptop.jpg');
+    /* Full height */
+    min-height: 700px;
+    /* Create the parallax scrolling effect */
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navigation */
+#mainNav {
+    height: 60px;
+}
+
+.navbar-default {
+    background-color: #90906f;
+    border-color: #E7E7E7;
+}
+
+    .navbar-default .navbar-brand {
+        color: #fff;
+    }
+
+        .navbar-default .navbar-brand:hover {
+            color: #7f0000;
+            background: #F0F0F0;
+        }
+
+        .navbar-default .navbar-brand:focus {
+            color: #fff;
+            background: #90906f;
+        }
+
+    .navbar-default .navbar-nav > li > a {
+        color: #fff;
+    }
+
+        .navbar-default .navbar-nav > li > a:hover,
+        .navbar-default .navbar-nav > li > a:focus {
+            color: #F0F0F0;
+            background: #7f0000;
+        }
+
+.nav {
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.navbar-collapse {
+    background: #90906f;
+}
+
+.navbar-nav > li.active > a,
+.navbar-nav > li.active > a:hover,
+.navbar-nav > li.active > a:focus {
+    color: #7f0000 !important;
+    background: #F0F0F0 !important;
+}
+
+/*About */
+img-circle {
+    max-width: 100%;
+}
+
+/* Portfolio */
+.portfolio-box {
+    position: relative;
+    display: block;
+    max-width: 650px;
+    margin: 0 auto
+}
+
+    .portfolio-box .portfolio-box-caption {
+        color: #fff;
+        opacity: 0;
+        display: block;
+        background: #7f0000;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .35s;
+        -moz-transition: all .35s;
+        transition: all .35s
+    }
+
+        .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%)
+        }
+
+            .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+            .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+                font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+                padding: 0 15px
+            }
+
+            .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 14px
+            }
+
+            .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+                font-size: 18px
+            }
+
+    .portfolio-box:hover .portfolio-box-caption {
+        opacity: 1
+    }
+
+    .portfolio-box:focus {
+        outline: 0
+    }
+
+@media (min-width:768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 16px
+    }
+
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 22px
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Contact */
 i {
     color: black;
 }
 
-.icons a .fa:hover {
-    color: var(--forestgreen);
+.social-icons {
+    text-align: center !important;
+    margin-left: -50px;
+}
+
+    .social-icons li {
+        display: inline-block;
+    }
+
+.icons a .fa-linkedin:hover {
+    color: #7f0000;
     transition: color .5s;
-  }
+}
+
+.icons a .fa-envelope-o:hover {
+    color: #7f0000;
+    transition: color .5s;
+}
+
+.icons a .fa-github:hover {
+    color: #7f0000;
+    transition: color .5s;
+}
+
+.icons a .fa-twitch:hover {
+    color: #7f0000;
+    transition: color .5s;
+}
+
+.icons a .fa-twitter:hover {
+    color: #7f0000;
+    transition: color .5s;
+}
+
+/* Footer */
+footer {
+    background-color: #90906f;
+    color: #fff;
+    height: 20px;
+    text-align: center;
+}
+
+#thank-you {
+    color: white;
+}
